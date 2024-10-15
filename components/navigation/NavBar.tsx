@@ -10,12 +10,12 @@ export default function NavBar() {
 					</Link>
 				</li>
 				<li>
-					<Link href="" className="hover:text-[#D7CDBB]">
+					<Link href="/scenic_design" className="hover:text-[#D7CDBB]">
 						Scenic Design
 					</Link>
 				</li>
 				<li>
-					<Link href="" className="hover:text-[#D7CDBB]">
+					<Link href="/artwork" className="hover:text-[#D7CDBB]">
 						Artworks
 					</Link>
 				</li>
