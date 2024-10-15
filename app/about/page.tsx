@@ -1,12 +1,17 @@
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+
+import { IoIosMail } from "react-icons/io";
 
 export default function About() {
 	return (
 		<>
-			<main className="max-w-[1200px] mx-auto">
-				<section className="w-full bg-[#C3BBAE] text-black rounded-tl-3xl rounded-br-3xl mb-10">
-					<div className="px-16 py-10">
-						<h2 className="text-3xl pb-8">My Story</h2>
+			<main className="max-w-[95%] lg:max-w-[1000px] mx-auto">
+				<section className="bg-[#C3BBAE] text-black rounded-tl-3xl rounded-br-3xl mb-10">
+					<div className="px-6 sm:px-10 md:px-16 lg:px-24 py-10 lg:py-16">
+						<h2 className="text-3xl pb-4 sm:pb-6 md:pb-8">My Story</h2>
 						<p className="text-thin italic">
 							Growing up in a small town in Japan, there wasn’t much
 							entertainment around. My life was simple, a little too simple, so
@@ -33,7 +38,7 @@ export default function About() {
 						</p>
 					</div>
 				</section>
-				<section className="w-full bg-[#8A7A69] text-black rounded-tl-3xl rounded-br-3xl grid grid-cols-2 h-32">
+				<section className="bg-[#8A7A69] text-black rounded-tl-3xl rounded-br-3xl grid grid-cols-2 h-32 mb-10">
 					<div className="flex flex-col justify-center items-center text-[#C3BBAE]">
 						<h3 className="uppercase font-black text-4xl">Resume</h3>
 						<h4 className="text-thin italic">
@@ -41,12 +46,58 @@ export default function About() {
 						</h4>
 					</div>
 					<div className="flex justify-center items-center rounded-tl-3xl rounded-br-3xl bg-[#C3BBAE]">
-						<Button className="rounded-full" size="lg" variant="download">
-							<a href="/resume.pdf" className="px-4 py-10" download>
+						<Button
+							className="rounded-full"
+							size="lg"
+							variant="download"
+							asChild
+						>
+							<a href="/resume.pdf" className="px-12 py-8 text-lg" download>
 								Download
 							</a>
 						</Button>
 					</div>
+				</section>
+				<section className="flex flex-col justify-center space-y-2 text-[#C3BBAE] max-w-[700px] mx-auto my-24">
+					<h2 className="text-4xl text-center uppercase">Contact</h2>
+					<div className="flex justify-center items-center g-4">
+						<IoIosMail />
+						<h3 className="pl-2">mio.okada0826@gmail.com</h3>
+					</div>
+					<form action="" className="space-y-2 italic">
+						<div className="grid grid-cols-2 gap-6">
+							<div className="space-y-1">
+								<Label htmlFor="firstName">First Name</Label>
+								<Input type="text" id="firstName" placeholder="your name" />
+							</div>
+							<div className="space-y-1">
+								<Label htmlFor="lastName">Last Name</Label>
+								<Input type="text" id="lastName" placeholder="your last name" />
+							</div>
+						</div>
+						<div className="space-y-1">
+							<Label htmlFor="email">Email</Label>
+							<Input
+								type="email"
+								id="email"
+								placeholder="example@example.com"
+							/>
+						</div>
+						<div className="space-y-1">
+							<Label htmlFor="message">Message</Label>
+							<Textarea id="message" placeholder="your message" />
+						</div>
+						<div className="flex justify-end">
+							<Button
+								size="lg"
+								variant="download"
+								type="submit"
+								className="hover:bg-black hover:text-[#C3BBAE]"
+							>
+								Send
+							</Button>
+						</div>
+					</form>
 				</section>
 			</main>
 		</>
