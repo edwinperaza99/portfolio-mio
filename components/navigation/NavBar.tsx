@@ -1,11 +1,4 @@
-"use client";
-
-import React from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { Roboto } from "next/font/google";
-
-const roboto = Roboto({ weight: "900", subsets: ["latin"] });
 
 export default function NavBar() {
 	return (
