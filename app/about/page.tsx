@@ -2,15 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-
 import { IoIosMail } from "react-icons/io";
 
 export default function About() {
 	return (
 		<>
-			<main className="max-w-[95%] lg:max-w-[1000px] mx-auto">
-				<section className="bg-[#C3BBAE] text-black rounded-tl-3xl rounded-br-3xl mb-10">
-					<div className="px-6 sm:px-10 md:px-16 lg:px-24 py-10 lg:py-16">
+			<main className="">
+				<section className="container-sm md:container text-black mb-10 mx-auto px-4">
+					<div className="px-6 sm:px-10 md:px-16 lg:px-24 py-10 lg:py-16  bg-[#C3BBAE] rounded-tl-3xl rounded-br-3xl">
 						<h2 className="text-3xl pb-4 sm:pb-6 md:pb-8">My Story</h2>
 						<p className="text-thin italic">
 							Growing up in a small town in Japan, there wasn’t much
@@ -38,33 +37,42 @@ export default function About() {
 						</p>
 					</div>
 				</section>
-				<section className="bg-[#8A7A69] text-black rounded-tl-3xl rounded-br-3xl grid grid-cols-2 h-32 mb-10">
-					<div className="flex flex-col justify-center items-center text-[#C3BBAE]">
-						<h3 className="uppercase font-black text-4xl">Resume</h3>
-						<h4 className="text-thin italic">
-							Click download to view my resume
-						</h4>
-					</div>
-					<div className="flex justify-center items-center rounded-tl-3xl rounded-br-3xl bg-[#C3BBAE]">
-						<Button
-							className="rounded-full"
-							size="lg"
-							variant="download"
-							asChild
-						>
-							<a href="/resume.pdf" className="px-12 py-8 text-lg" download>
-								Download
-							</a>
-						</Button>
+				<section className="container-sm md:container mx-auto mb-10 px-4">
+					<div className="bg-[#8A7A69] text-black rounded-tl-3xl rounded-br-3xl grid grid-cols-2 h-32">
+						<div className="flex flex-col justify-center items-center text-[#C3BBAE]">
+							<h3 className="uppercase font-black text-xl sm:text-2xl md:text-4xl">
+								Resume
+							</h3>
+							<p className="text-thin italic text-xs sm:text-sm md:text-base">
+								Click download to view my resume
+							</p>
+						</div>
+						<div className="flex justify-center items-center rounded-tl-3xl rounded-br-3xl bg-[#C3BBAE]">
+							<Button
+								className="rounded-full"
+								size="lg"
+								variant="download"
+								asChild
+							>
+								<a href="/resume.pdf" className="px-12 py-8 text-lg" download>
+									Download
+								</a>
+							</Button>
+						</div>
 					</div>
 				</section>
-				<section className="flex flex-col justify-center space-y-2 text-[#C3BBAE] max-w-[700px] mx-auto my-24">
-					<h2 className="text-4xl text-center uppercase">Contact</h2>
-					<div className="flex justify-center items-center g-4">
-						<IoIosMail />
-						<h3 className="pl-2">mio.okada0826@gmail.com</h3>
-					</div>
-					<form action="" className="space-y-2 italic">
+				<section className="container-sm md:container text-[#C3BBAE] mx-auto my-24 px-4">
+					<form
+						action=""
+						className="space-y-2 italic flex flex-col justify-center max-w-[700px] mx-auto"
+					>
+						<h2 className="text-4xl text-center uppercase not-italic">
+							Contact
+						</h2>
+						<div className="flex justify-center items-center g-4">
+							<IoIosMail />
+							<h3 className="pl-2">mio.okada0826@gmail.com</h3>
+						</div>
 						<div className="grid grid-cols-2 gap-6">
 							<div className="space-y-1">
 								<Label htmlFor="firstName">First Name</Label>
