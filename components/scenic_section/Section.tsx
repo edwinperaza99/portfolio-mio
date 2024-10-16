@@ -9,13 +9,17 @@ import "swiper/css/thumbs";
 import { FreeMode, Navigation, Thumbs, Autoplay } from "swiper/modules";
 import SwiperCore from "swiper";
 
+// to view images in full screen
+import { Gallery, Item } from "react-photoswipe-gallery";
+import "photoswipe/dist/photoswipe.css";
+
 type ScenicSectionProps = {
 	title: string;
 	subtitle: string;
 	director: string;
 	venue: string;
 	date: string;
-	images: string[];
+	images: { src: string; caption: string }[];
 	isEven: boolean;
 };
 
@@ -50,13 +54,25 @@ export default function ScenicSection({
 			modules={[FreeMode, Navigation, Thumbs, Autoplay]}
 			className="mb-3"
 		>
-			{images.map((imageSrc, index) => (
+			{images.map((image, index) => (
 				<SwiperSlide key={index}>
-					<img
-						src={imageSrc}
-						alt={`${title} slide ${index + 1}`}
-						className="w-full h-full object-cover"
-					/>
+					<Item
+						original={image.src}
+						thumbnail={image.src}
+						width="1200"
+						height="800"
+						caption={image.caption} // Add the caption here
+					>
+						{({ ref, open }) => (
+							<img
+								ref={ref as React.MutableRefObject<HTMLImageElement>}
+								onClick={open}
+								src={image.src}
+								alt={`${title} slide ${index + 1}`}
+								className="w-full h-full object-cover cursor-pointer"
+							/>
+						)}
+					</Item>
 				</SwiperSlide>
 			))}
 		</Swiper>
@@ -74,10 +90,10 @@ export default function ScenicSection({
 			modules={[FreeMode, Navigation, Thumbs]}
 			className="mySwiper"
 		>
-			{images.map((imageSrc, index) => (
+			{images.map((image, index) => (
 				<SwiperSlide key={index}>
 					<img
-						src={imageSrc}
+						src={image.src}
 						alt={`${title} thumbnail ${index + 1}`}
 						className="w-full h-full object-cover"
 					/>
@@ -112,8 +128,10 @@ export default function ScenicSection({
 				} rounded-tl-3xl rounded-br-3xl grid grid-cols-3`}
 			>
 				<div className="col-span-3 md:col-span-2 p-4">
-					{renderMainSwiper()}
-					{renderThumbnailSwiper()}
+					<Gallery withCaption>
+						{renderMainSwiper()}
+						{renderThumbnailSwiper()}
+					</Gallery>
 				</div>
 				<div
 					className={`flex flex-col gap-4 justify-center items-start md:items-center p-8 col-span-3 md:col-span-1 ${
