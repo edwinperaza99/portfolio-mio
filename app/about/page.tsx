@@ -54,7 +54,11 @@ export default function About() {
 								variant="download"
 								asChild
 							>
-								<a href="/resume.pdf" className="px-12 py-8 text-lg" download>
+								<a
+									href="/Mio_Okada_Resume.pdf"
+									className="px-12 py-8 text-lg"
+									target="_blank"
+								>
 									Download
 								</a>
 							</Button>
