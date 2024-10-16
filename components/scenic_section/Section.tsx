@@ -65,7 +65,7 @@ export default function ScenicSection({
 					>
 						{({ ref, open }) => (
 							<img
-								ref={ref as React.MutableRefObject<HTMLImageElement>}
+								ref={ref}
 								onClick={open}
 								src={image.src}
 								alt={`${title} slide ${index + 1}`}
