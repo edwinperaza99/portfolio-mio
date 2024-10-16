@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { FreeMode, Navigation, Thumbs, Autoplay } from "swiper/modules";
 import SwiperCore from "swiper";
 
 type ScenicSectionProps = {
@@ -42,8 +42,12 @@ export default function ScenicSection({
 			loop={true}
 			spaceBetween={10}
 			navigation={true}
+			autoplay={{
+				delay: 4000, // 4 seconds between slides
+				disableOnInteraction: false,
+			}}
 			thumbs={{ swiper: thumbsSwiper }}
-			modules={[FreeMode, Navigation, Thumbs]}
+			modules={[FreeMode, Navigation, Thumbs, Autoplay]}
 			className="mb-3"
 		>
 			{images.map((imageSrc, index) => (
