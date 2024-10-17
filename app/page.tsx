@@ -6,7 +6,7 @@ export default function Home() {
 		<>
 			<main className="max-w-[1200px] mx-auto">
 				{/* projects section  */}
-				<section className="container-sm md:container grid grid-cols-3 gap-4 mx-auto px-4 mb-10">
+				<section className="container-sm md:container grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto px-4 mb-10">
 					{productions.map((production, index) => (
 						<article key={index} className="h-auto w-full">
 							<div className="aspect-video relative">
@@ -18,7 +18,9 @@ export default function Home() {
 								/>
 							</div>
 							<div className="text-center p-2">
-								<h3 className="text-lg text-gray-300">{production.title}</h3>
+								<h3 className="text-base md:text-lg text-gray-300">
+									{production.title}
+								</h3>
 								<h4 className="text-sm text-gray-500 lowercase font-thin">
 									{production.role}
 								</h4>
