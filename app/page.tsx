@@ -1,4 +1,5 @@
 import { productions } from "@/data/productionsData";
+import Image from "next/image";
 
 export default function Home() {
 	return (
@@ -8,11 +9,12 @@ export default function Home() {
 				<section className="container-sm md:container grid grid-cols-3 gap-4 mx-auto px-4 mb-10">
 					{productions.map((production, index) => (
 						<article key={index} className="h-auto w-full">
-							<div className="aspect-video">
-								<img
+							<div className="aspect-video relative">
+								<Image
 									src={production.images[0].src}
 									alt={production.images[0].caption}
-									className="w-full h-full object-cover"
+									className="object-cover"
+									fill
 								/>
 							</div>
 							<div className="text-center p-2">
