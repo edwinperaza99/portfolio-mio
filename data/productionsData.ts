@@ -7,14 +7,11 @@ export type Production = {
 	title: string;
 	role: string;
 	location: string;
+	date: string;
 	description: string;
 	credits: {
 		direction: string;
 		author: string;
-		lighting: string;
-		projections: string;
-		costumes: string;
-		sound: string;
 	};
 	images: Image[];
 };
@@ -24,15 +21,12 @@ export const productions: Production[] = [
 		title: "Urinetown",
 		role: "SCENIC DESIGNER",
 		location: "James D. Young Theater",
+		date: "4/15/24 - 4/27/24",
 		description:
 			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
 		credits: {
 			direction: "Collette Rutherford",
-			author: "Evelina Fernandez",
-			lighting: "Pablo Santiago",
-			projections: "Yee Eun Nam",
-			costumes: "Carlos Brown",
-			sound: "John Zalewski",
+			author: "Greg Kotis",
 		},
 		images: [
 			{ src: "/1_Urinetown/1.jpg", caption: "PC Mark Ramont" },
@@ -49,15 +43,12 @@ export const productions: Production[] = [
 		title: "Street Scene",
 		role: "SCENIC DESIGNER",
 		location: "Little Theater",
+		date: "3/24/23 - 4/8/23",
 		description:
 			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
 		credits: {
-			direction: "Collette Rutherford",
-			author: "Evelina Fernandez",
-			lighting: "Pablo Santiago",
-			projections: "Yee Eun Nam",
-			costumes: "Carlos Brown",
-			sound: "John Zalewski",
+			direction: "Kerry Jennings",
+			author: "Kurt Weill",
 		},
 		images: [
 			{ src: "/2_Street_Scene/1.jpg", caption: "PC Jenny Graham" },
@@ -74,15 +65,12 @@ export const productions: Production[] = [
 		title: "She Kills Monsters",
 		role: "SCENIC DESIGNER",
 		location: "James D. Young Theater",
+		date: "11/10/22 - 12/3/22",
 		description:
 			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
 		credits: {
-			direction: "Collette Rutherford",
-			author: "Evelina Fernandez",
-			lighting: "Pablo Santiago",
-			projections: "Yee Eun Nam",
-			costumes: "Carlos Brown",
-			sound: "John Zalewski",
+			direction: "Anne James",
+			author: "Qui Nguyen",
 		},
 		images: [
 			{ src: "/3_She_Kills_Monsters/1.jpg", caption: "" },
@@ -99,15 +87,12 @@ export const productions: Production[] = [
 		title: "The Wolves",
 		role: "SCENIC DESIGNER",
 		location: "James D. Young Theater",
+		date: "12/8/21 - 12/11/21",
 		description:
 			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
 		credits: {
-			direction: "Collette Rutherford",
-			author: "Evelina Fernandez",
-			lighting: "Pablo Santiago",
-			projections: "Yee Eun Nam",
-			costumes: "Carlos Brown",
-			sound: "John Zalewski",
+			direction: "Sara Guerrero",
+			author: "Sarah Delappe",
 		},
 		images: [
 			{ src: "/4_The_Wolves/1.jpg", caption: "" },
@@ -115,24 +100,19 @@ export const productions: Production[] = [
 			{ src: "/4_The_Wolves/3.jpg", caption: "" },
 			{ src: "/4_The_Wolves/4.jpg", caption: "" },
 			{ src: "/4_The_Wolves/5.jpg", caption: "" },
-			{ src: "/4_The_Wolves/6.jpg", caption: "" },
-			{ src: "/4_The_Wolves/7.jpg", caption: "" },
-			{ src: "/4_The_Wolves/8.heic", caption: "" },
+			{ src: "/4_The_Wolves/6.heic", caption: "" },
 		],
 	},
 	{
 		title: "The Belle's Stratagem",
 		role: "SCENIC DESIGNER",
-		location: "James D. Young Theater",
+		location: "",
+		date: "",
 		description:
 			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
 		credits: {
-			direction: "Collette Rutherford",
-			author: "Evelina Fernandez",
-			lighting: "Pablo Santiago",
-			projections: "Yee Eun Nam",
-			costumes: "Carlos Brown",
-			sound: "John Zalewski",
+			direction: "",
+			author: "",
 		},
 		images: [
 			{ src: "/5_The_Belles_Stratagem/1.jpg", caption: "PC Jenny Graham" },
@@ -147,16 +127,13 @@ export const productions: Production[] = [
 	{
 		title: "Lady Susan",
 		role: "SCENIC DESIGNER",
-		location: "James D. Young Theater",
+		location: "Hallberg Theater",
+		date: "4/29/22 - 5/14/22",
 		description:
 			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
 		credits: {
-			direction: "Collette Rutherford",
-			author: "Evelina Fernandez",
-			lighting: "Pablo Santiago",
-			projections: "Yee Eun Nam",
-			costumes: "Carlos Brown",
-			sound: "John Zalewski",
+			direction: "Jim Tauli",
+			author: "Jane Austen",
 		},
 		images: [
 			{ src: "/6_Lady_Susan/1.jpg", caption: "" },
@@ -169,18 +146,15 @@ export const productions: Production[] = [
 		],
 	},
 	{
-		title: "Crucible",
+		title: "The Crucible",
 		role: "SCENIC DESIGNER",
-		location: "James D. Young Theater",
+		location: "Black Box Theater at ELAC",
+		date: "5/17/19 - 5/26/19",
 		description:
 			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
 		credits: {
-			direction: "Collette Rutherford",
-			author: "Evelina Fernandez",
-			lighting: "Pablo Santiago",
-			projections: "Yee Eun Nam",
-			costumes: "Carlos Brown",
-			sound: "John Zalewski",
+			direction: "Kelley Hogan",
+			author: "Arthur Miller",
 		},
 		images: [
 			{ src: "/7_Crucible/1.jpg", caption: "" },
@@ -194,16 +168,13 @@ export const productions: Production[] = [
 	{
 		title: "Comedy of Errors",
 		role: "SCENIC DESIGNER",
-		location: "James D. Young Theater",
+		location: "Black Box Theater at ELAC",
+		date: "4/13/18 - 4/22/18",
 		description:
 			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
 		credits: {
-			direction: "Collette Rutherford",
-			author: "Evelina Fernandez",
-			lighting: "Pablo Santiago",
-			projections: "Yee Eun Nam",
-			costumes: "Carlos Brown",
-			sound: "John Zalewski",
+			direction: "Kelley Hogan",
+			author: "William Shakespeare",
 		},
 		images: [
 			{ src: "/8_Comedy_of_Errors/1.jpg", caption: "" },
@@ -217,16 +188,13 @@ export const productions: Production[] = [
 	{
 		title: "Fall Dance 2023",
 		role: "SCENIC DESIGNER",
-		location: "James D. Young Theater",
+		location: "",
+		date: "",
 		description:
 			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
 		credits: {
-			direction: "Collette Rutherford",
-			author: "Evelina Fernandez",
-			lighting: "Pablo Santiago",
-			projections: "Yee Eun Nam",
-			costumes: "Carlos Brown",
-			sound: "John Zalewski",
+			direction: "",
+			author: "",
 		},
 		images: [
 			{ src: "/9_Fall_Dance_2023/1.jpg", caption: "" },
@@ -240,16 +208,13 @@ export const productions: Production[] = [
 	{
 		title: "Sweeney Todd",
 		role: "SCENIC DESIGNER",
-		location: "James D. Young Theater",
+		location: "",
+		date: "",
 		description:
 			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
 		credits: {
-			direction: "Collette Rutherford",
-			author: "Evelina Fernandez",
-			lighting: "Pablo Santiago",
-			projections: "Yee Eun Nam",
-			costumes: "Carlos Brown",
-			sound: "John Zalewski",
+			direction: "",
+			author: "",
 		},
 		images: [
 			{ src: "/10_Sweeney_Todd/1.jpg", caption: "" },
@@ -262,16 +227,13 @@ export const productions: Production[] = [
 	{
 		title: "Lend Me a Tenor",
 		role: "SCENIC DESIGNER",
-		location: "James D. Young Theater",
+		location: "",
+		date: "",
 		description:
 			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
 		credits: {
-			direction: "Collette Rutherford",
-			author: "Evelina Fernandez",
-			lighting: "Pablo Santiago",
-			projections: "Yee Eun Nam",
-			costumes: "Carlos Brown",
-			sound: "John Zalewski",
+			direction: "",
+			author: "",
 		},
 		images: [
 			{ src: "/11_Lend_Me_a_Tenor/1.jpg", caption: "" },

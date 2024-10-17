@@ -1,19 +1,19 @@
 import ScenicSection from "@/components/scenic_section/Section";
-import { sections } from "@/data/sectionsData";
+import { productions } from "@/data/productionsData";
 
 export default function ScenicDesign() {
 	return (
 		<>
 			<main className="space-y-4 mb-8">
-				{sections.map((section, index) => (
+				{productions.map((production, index) => (
 					<ScenicSection
 						key={index}
-						title={section.title}
-						subtitle={section.subtitle}
-						director={section.director}
-						venue={section.venue}
-						date={section.date}
-						images={section.images}
+						title={production.title}
+						subtitle={production.credits.author}
+						director={production.credits.direction}
+						venue={production.location}
+						date={production.date}
+						images={production.images}
 						isEven={index % 2 === 0}
 					/>
 				))}
