@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -32,6 +34,10 @@ export default function ScenicSection({
 	images,
 	isEven,
 }: ScenicSectionProps) {
+	// Function to generate a random delay between 4 and 10 seconds
+	const getRandomDelay = () =>
+		Math.floor(Math.random() * (10 - 4 + 1) + 4) * 1000;
+
 	const [thumbsSwiper, setThumbsSwiper] = useState<SwiperCore | null>(null);
 
 	// Helper function to render the main Swiper with thumbnails
@@ -47,7 +53,7 @@ export default function ScenicSection({
 			spaceBetween={10}
 			navigation={true}
 			autoplay={{
-				delay: 4000, // 4 seconds between slides
+				delay: getRandomDelay(), // random delay
 				disableOnInteraction: false,
 			}}
 			thumbs={{ swiper: thumbsSwiper }}
@@ -55,21 +61,22 @@ export default function ScenicSection({
 			className="mb-3"
 		>
 			{images.map((image, index) => (
-				<SwiperSlide key={index}>
+				<SwiperSlide key={index} className="aspect-video relative">
 					<Item
 						original={image.src}
 						thumbnail={image.src}
 						width="1200"
 						height="800"
-						caption={image.caption} // Add the caption here
+						caption={image.caption}
 					>
 						{({ ref, open }) => (
-							<img
+							<Image
 								ref={ref}
 								onClick={open}
 								src={image.src}
 								alt={`${title} slide ${index + 1}`}
-								className="w-full h-full object-cover cursor-pointer"
+								className="object-cover cursor-pointer"
+								fill
 							/>
 						)}
 					</Item>
@@ -92,11 +99,14 @@ export default function ScenicSection({
 		>
 			{images.map((image, index) => (
 				<SwiperSlide key={index}>
-					<img
-						src={image.src}
-						alt={`${title} thumbnail ${index + 1}`}
-						className="w-full h-full object-cover"
-					/>
+					<div className="aspect-video relative w-full h-full">
+						<Image
+							src={image.src}
+							alt={`${title} thumbnail ${index + 1}`}
+							fill
+							className="object-cover"
+						/>
+					</div>
 				</SwiperSlide>
 			))}
 		</Swiper>
