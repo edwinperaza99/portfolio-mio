@@ -77,6 +77,7 @@ export default function ScenicSection({
 								alt={`${title} slide ${index + 1}`}
 								className="object-cover cursor-pointer"
 								fill
+								placeholder="blur"
 							/>
 						)}
 					</Item>
@@ -105,6 +106,7 @@ export default function ScenicSection({
 							alt={`${title} thumbnail ${index + 1}`}
 							fill
 							className="object-cover"
+							placeholder="blur"
 						/>
 					</div>
 				</SwiperSlide>
