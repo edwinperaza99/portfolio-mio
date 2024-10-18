@@ -9,16 +9,16 @@ export default function NavBar() {
 						Home
 					</Link>
 				</li>
-				<li>
+				{/* <li>
 					<Link href="/scenic_design" className="hover:text-[#D7CDBB]">
 						Scenic Design
 					</Link>
-				</li>
-				<li>
+				</li> */}
+				{/* <li>
 					<Link href="/artwork" className="hover:text-[#D7CDBB]">
 						Artworks
 					</Link>
-				</li>
+				</li> */}
 				<li>
 					<Link href="/about" className="hover:text-[#D7CDBB]">
 						About
