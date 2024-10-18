@@ -121,7 +121,7 @@ export default function ScenicSection({
 			<h2 className="italic text-3xl">
 				{title}{" "}
 				<span className="not-italic text-base whitespace-nowrap">
-					{subtitle}
+					by {subtitle}
 				</span>
 			</h2>
 			<ul>
