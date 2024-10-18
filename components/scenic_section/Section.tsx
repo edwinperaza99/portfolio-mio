@@ -78,6 +78,7 @@ export default function ScenicSection({
 								className="object-cover cursor-pointer"
 								fill
 								placeholder="blur"
+								blurDataURL=""
 							/>
 						)}
 					</Item>
