@@ -26,7 +26,7 @@ export default function ImagesGallery({ images }: ClientGalleryProps) {
 	return (
 		<Gallery withCaption>
 			{images.map((image, index) => (
-				<div key={index} className="w-full mb-8">
+				<div key={index} className="w-full mb-4 md:mb-6">
 					<Item
 						original={image.src}
 						thumbnail={image.src}

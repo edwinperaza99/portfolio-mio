@@ -20,7 +20,7 @@ export default function ProductionPage({ params }: { params: { id: string } }) {
 	return (
 		<main className="max-w-[1200px] mx-auto">
 			<SectionContainer>
-				<div className="text-black bg-[#C3BBAE] text-center rounded-tl-3xl rounded-br-3xl p-4 mb-8">
+				<div className="text-black bg-[#C3BBAE] text-center rounded-tl-3xl rounded-br-3xl p-4 mb-4 md:mb-6">
 					<h1 className="text-2xl font-bold">{production.title}</h1>
 					<p className="text-lg">{production.role}</p>
 					<p className="text-sm">{production.date}</p>
