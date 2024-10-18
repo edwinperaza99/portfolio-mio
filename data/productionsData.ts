@@ -4,6 +4,7 @@ export type Image = {
 };
 
 export type Production = {
+	id: string;
 	title: string;
 	role: string;
 	location: string;
@@ -18,6 +19,7 @@ export type Production = {
 
 export const productions: Production[] = [
 	{
+		id: "1",
 		title: "Urinetown",
 		role: "SCENIC DESIGNER",
 		location: "James D. Young Theater",
@@ -40,6 +42,7 @@ export const productions: Production[] = [
 		],
 	},
 	{
+		id: "2",
 		title: "Street Scene",
 		role: "SCENIC DESIGNER",
 		location: "Little Theater",
@@ -62,6 +65,7 @@ export const productions: Production[] = [
 		],
 	},
 	{
+		id: "3",
 		title: "She Kills Monsters",
 		role: "SCENIC DESIGNER",
 		location: "James D. Young Theater",
@@ -84,6 +88,7 @@ export const productions: Production[] = [
 		],
 	},
 	{
+		id: "4",
 		title: "The Wolves",
 		role: "SCENIC DESIGNER",
 		location: "James D. Young Theater",
@@ -104,6 +109,7 @@ export const productions: Production[] = [
 		],
 	},
 	{
+		id: "5",
 		title: "The Belle's Stratagem",
 		role: "SCENIC DESIGNER",
 		location: "",
@@ -125,6 +131,7 @@ export const productions: Production[] = [
 		],
 	},
 	{
+		id: "6",
 		title: "Lady Susan",
 		role: "SCENIC DESIGNER",
 		location: "Hallberg Theater",
@@ -142,10 +149,10 @@ export const productions: Production[] = [
 			{ src: "/6_Lady_Susan/4.jpg", caption: "" },
 			{ src: "/6_Lady_Susan/5.jpg", caption: "" },
 			{ src: "/6_Lady_Susan/6.jpg", caption: "" },
-			{ src: "/6_Lady_Susan/7.jpg", caption: "" },
 		],
 	},
 	{
+		id: "7",
 		title: "The Crucible",
 		role: "SCENIC DESIGNER",
 		location: "Black Box Theater at ELAC",
@@ -166,6 +173,7 @@ export const productions: Production[] = [
 		],
 	},
 	{
+		id: "8",
 		title: "Comedy of Errors",
 		role: "SCENIC DESIGNER",
 		location: "Black Box Theater at ELAC",
@@ -186,6 +194,7 @@ export const productions: Production[] = [
 		],
 	},
 	{
+		id: "9",
 		title: "Fall Dance 2023",
 		role: "SCENIC DESIGNER",
 		location: "",
@@ -206,6 +215,7 @@ export const productions: Production[] = [
 		],
 	},
 	{
+		id: "10",
 		title: "Sweeney Todd",
 		role: "SCENIC DESIGNER",
 		location: "",
@@ -225,6 +235,7 @@ export const productions: Production[] = [
 		],
 	},
 	{
+		id: "11",
 		title: "Lend Me a Tenor",
 		role: "SCENIC DESIGNER",
 		location: "",
