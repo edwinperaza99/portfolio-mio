@@ -24,8 +24,7 @@ export const productions: Production[] = [
 		role: "SCENIC DESIGNER",
 		location: "James D. Young Theater",
 		date: "4/15/24 - 4/27/24",
-		description:
-			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
+		description: "",
 		credits: {
 			direction: "Collette Rutherford",
 			author: "Greg Kotis",
@@ -47,8 +46,7 @@ export const productions: Production[] = [
 		role: "SCENIC DESIGNER",
 		location: "Little Theater",
 		date: "3/24/23 - 4/8/23",
-		description:
-			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
+		description: "",
 		credits: {
 			direction: "Kerry Jennings",
 			author: "Kurt Weill",
@@ -70,8 +68,7 @@ export const productions: Production[] = [
 		role: "SCENIC DESIGNER",
 		location: "James D. Young Theater",
 		date: "11/10/22 - 12/3/22",
-		description:
-			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
+		description: "",
 		credits: {
 			direction: "Anne James",
 			author: "Qui Nguyen",
@@ -93,8 +90,7 @@ export const productions: Production[] = [
 		role: "SCENIC DESIGNER",
 		location: "James D. Young Theater",
 		date: "12/8/21 - 12/11/21",
-		description:
-			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
+		description: "",
 		credits: {
 			direction: "Sara Guerrero",
 			author: "Sarah Delappe",
@@ -114,8 +110,7 @@ export const productions: Production[] = [
 		role: "SCENIC DESIGNER",
 		location: "",
 		date: "",
-		description:
-			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
+		description: "",
 		credits: {
 			direction: "",
 			author: "",
@@ -136,8 +131,7 @@ export const productions: Production[] = [
 		role: "SCENIC DESIGNER",
 		location: "Hallberg Theater",
 		date: "4/29/22 - 5/14/22",
-		description:
-			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
+		description: "",
 		credits: {
 			direction: "Jim Tauli",
 			author: "Jane Austen",
@@ -157,8 +151,7 @@ export const productions: Production[] = [
 		role: "SCENIC DESIGNER",
 		location: "Black Box Theater at ELAC",
 		date: "5/17/19 - 5/26/19",
-		description:
-			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
+		description: "",
 		credits: {
 			direction: "Kelley Hogan",
 			author: "Arthur Miller",
@@ -178,8 +171,7 @@ export const productions: Production[] = [
 		role: "SCENIC DESIGNER",
 		location: "Black Box Theater at ELAC",
 		date: "4/13/18 - 4/22/18",
-		description:
-			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
+		description: "",
 		credits: {
 			direction: "Kelley Hogan",
 			author: "William Shakespeare",
@@ -199,8 +191,7 @@ export const productions: Production[] = [
 		role: "SCENIC DESIGNER",
 		location: "",
 		date: "",
-		description:
-			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
+		description: "",
 		credits: {
 			direction: "",
 			author: "",
@@ -220,8 +211,7 @@ export const productions: Production[] = [
 		role: "SCENIC DESIGNER",
 		location: "",
 		date: "",
-		description:
-			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
+		description: "",
 		credits: {
 			direction: "",
 			author: "",
@@ -240,8 +230,7 @@ export const productions: Production[] = [
 		role: "SCENIC DESIGNER",
 		location: "",
 		date: "",
-		description:
-			"The Trilogy follows the Morales family through decades of the Mexican-American experience, from a remote mining town in Arizona during World War II, to the Phoenix family home during the Cuban Missile Crisis, and finally to Los Angeles following the death of Pope John Paul II in 2005.",
+		description: "",
 		credits: {
 			direction: "",
 			author: "",

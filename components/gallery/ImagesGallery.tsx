@@ -51,7 +51,7 @@ export default function ImagesGallery({ images }: ClientGalleryProps) {
 									}} // Capture original dimensions
 									style={{ objectFit: "contain" }}
 									className="object-cover cursor-pointer"
-									placeholder="blur"
+									// placeholder="blur"
 								/>
 							</div>
 						)}
