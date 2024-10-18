@@ -105,7 +105,7 @@ export const productions: Production[] = [
 			{ src: "/4_The_Wolves/3.jpg", caption: "" },
 			{ src: "/4_The_Wolves/4.jpg", caption: "" },
 			{ src: "/4_The_Wolves/5.jpg", caption: "" },
-			{ src: "/4_The_Wolves/6.heic", caption: "" },
+			// { src: "/4_The_Wolves/6.heic", caption: "" },
 		],
 	},
 	{
