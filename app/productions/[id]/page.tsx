@@ -23,13 +23,29 @@ export default function ProductionPage({ params }: { params: { id: string } }) {
 				<div className="text-black bg-[#C3BBAE] text-center rounded-tl-3xl rounded-br-3xl p-4 mb-4 md:mb-6 flex flex-col justify-center min-w-[70%]">
 					<h2 className="text-2xl font-bold">{production.title}</h2>
 					<h3 className="text-base mb-3">
-						by <span className="italic">{production.credits.author}</span>
+						by{" "}
+						<span className="italic">
+							{production.credits?.author ||
+								production.credits?.coordinator ||
+								"Unknown"}
+						</span>
 					</h3>
 					<div className="flex flex-col justify-start">
 						<ul className="text-sm justify-start text-left mx-auto">
-							<li>Director: {production.credits.direction}</li>
-							<li>Venue: {production.location}</li>
-							<li>Date: {production.date}</li>
+							{production.credits?.direction && (
+								<li>Director: {production.credits.direction}</li>
+							)}
+							{production.credits?.coordinator && (
+								<li>Coordinator: {production.credits.coordinator}</li>
+							)}
+							{production.credits?.music && (
+								<li>Music & Lyrics: {production.credits.music}</li>
+							)}
+							{production.credits?.choreographer && (
+								<li>Choreographer: {production.credits.choreographer}</li>
+							)}
+							{production.location && <li>Venue: {production.location}</li>}
+							{production.date && <li>Date: {production.date}</li>}
 						</ul>
 					</div>
 
