@@ -19,14 +19,14 @@ export default function ProductionPage({ params }: { params: { id: string } }) {
 	}
 	return (
 		<main className="max-w-[1200px] mx-auto">
-			<SectionContainer>
-				<div className="text-black bg-[#C3BBAE] text-center rounded-tl-3xl rounded-br-3xl p-4 mb-4 md:mb-6 flex flex-col justify-center">
+			<SectionContainer className="flex justify-center">
+				<div className="text-black bg-[#C3BBAE] text-center rounded-tl-3xl rounded-br-3xl p-4 mb-4 md:mb-6 flex flex-col justify-center min-w-[70%]">
 					<h2 className="text-2xl font-bold">{production.title}</h2>
-					<h3 className="text-base">
+					<h3 className="text-base mb-3">
 						by <span className="italic">{production.credits.author}</span>
 					</h3>
 					<div className="flex flex-col justify-start">
-						<ul className="text-sm">
+						<ul className="text-sm justify-start text-left mx-auto">
 							<li>Director: {production.credits.direction}</li>
 							<li>Venue: {production.location}</li>
 							<li>Date: {production.date}</li>
@@ -35,6 +35,8 @@ export default function ProductionPage({ params }: { params: { id: string } }) {
 
 					{/* <p className="mt-4">{production.description}</p> */}
 				</div>
+			</SectionContainer>
+			<SectionContainer>
 				<ImagesGallery images={production.images} />
 			</SectionContainer>
 		</main>
