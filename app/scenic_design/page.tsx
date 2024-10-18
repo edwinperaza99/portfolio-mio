@@ -9,8 +9,7 @@ export default function ScenicDesign() {
 					<ScenicSection
 						key={index}
 						title={production.title}
-						subtitle={production.credits.author}
-						director={production.credits.direction}
+						credits={production.credits}
 						venue={production.location}
 						date={production.date}
 						images={production.images}

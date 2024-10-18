@@ -44,6 +44,9 @@ export default function ProductionPage({ params }: { params: { id: string } }) {
 							{production.credits?.choreographer && (
 								<li>Choreographer: {production.credits.choreographer}</li>
 							)}
+							{production.credits?.codesigner && (
+								<li>Co-Designer: {production.credits.codesigner}</li>
+							)}
 							{production.location && <li>Venue: {production.location}</li>}
 							{production.date && <li>Date: {production.date}</li>}
 						</ul>

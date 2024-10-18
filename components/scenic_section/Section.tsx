@@ -17,8 +17,14 @@ import "photoswipe/dist/photoswipe.css";
 
 type ScenicSectionProps = {
 	title: string;
-	subtitle: string;
-	director: string;
+	credits?: {
+		direction?: string;
+		author?: string;
+		music?: string;
+		coordinator?: string;
+		codesigner?: string;
+		choreographer?: string;
+	};
 	venue: string;
 	date: string;
 	images: { src: string; caption: string }[];
@@ -27,8 +33,7 @@ type ScenicSectionProps = {
 
 export default function ScenicSection({
 	title,
-	subtitle,
-	director,
+	credits,
 	venue,
 	date,
 	images,
@@ -121,11 +126,18 @@ export default function ScenicSection({
 			<h2 className="italic text-3xl">
 				{title}{" "}
 				<span className="not-italic text-base whitespace-nowrap">
-					by {subtitle}
+					by {credits?.author || credits?.coordinator || "Unknown"}
 				</span>
 			</h2>
 			<ul>
-				<li>Director: {director}</li>
+				{credits?.direction && <li>Director: {credits.direction}</li>}
+				{credits?.coordinator && <li>Coordinator: {credits.coordinator}</li>}
+				{credits?.music && <li>Music & Lyrics: {credits.music}</li>}
+				{credits?.choreographer && (
+					<li>Choreographer: {credits.choreographer}</li>
+				)}
+				{credits?.codesigner && <li>Co-Designer: {credits.codesigner}</li>}
+
 				<li>Venue: {venue}</li>
 				<li>Date: {date}</li>
 			</ul>
