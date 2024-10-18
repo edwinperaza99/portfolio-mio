@@ -42,6 +42,9 @@ export default function RootLayout({
 					<NavBar />
 				</header>
 				{children}
+				<footer className="container mx-auto text-center py-6 font-thin text-gray-300">
+					<p>&copy; {new Date().getFullYear()} Mio Okada</p>
+				</footer>
 			</body>
 		</html>
 	);
