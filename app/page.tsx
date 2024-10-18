@@ -26,7 +26,9 @@ export default function Home() {
 									<h4 className="text-sm text-gray-500 group-hover:text-gray-300 lowercase font-thin">
 										by{" "}
 										<span className="italic capitalize">
-											{production.credits.author}
+											{production.credits?.author ||
+												production.credits?.coordinator ||
+												"Unknown"}
 										</span>
 									</h4>
 								</div>

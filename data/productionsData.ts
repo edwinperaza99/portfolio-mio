@@ -10,9 +10,13 @@ export type Production = {
 	location: string;
 	date: string;
 	description: string;
-	credits: {
-		direction: string;
-		author: string;
+	credits?: {
+		direction?: string;
+		author?: string;
+		music?: string;
+		coordinator?: string;
+		codesigner?: string;
+		choreographer?: string;
 	};
 	images: Image[];
 };
@@ -187,14 +191,14 @@ export const productions: Production[] = [
 	},
 	{
 		id: "9",
-		title: "Fall Dance 2023",
+		title: "Fall Dance Theater: in Tandem",
 		role: "SCENIC DESIGNER",
-		location: "",
-		date: "",
+		location: "Hallberg Theater",
+		date: "11/30/23- 12/9/23",
 		description: "",
 		credits: {
-			direction: "",
-			author: "",
+			coordinator: "Lisa Long",
+			choreographer: "Joshua Romero",
 		},
 		images: [
 			{ src: "/9_Fall_Dance_2023/1.jpg", caption: "" },
@@ -207,14 +211,16 @@ export const productions: Production[] = [
 	},
 	{
 		id: "10",
-		title: "Sweeney Todd",
+		title: "Sweeney Todd: The Demon Barber of Fleet Street",
 		role: "SCENIC DESIGNER",
-		location: "",
-		date: "",
+		location: "Chance Theater",
+		date: "7/12/24 - 8/18/24",
 		description: "",
 		credits: {
-			direction: "",
-			author: "",
+			direction: "James Michael McHale",
+			author: "Hugh Wheeler",
+			codesigner: "Fred Kinney",
+			music: "Stephen Sondheim",
 		},
 		images: [
 			{ src: "/10_Sweeney_Todd/1.jpg", caption: "" },
@@ -228,12 +234,12 @@ export const productions: Production[] = [
 		id: "11",
 		title: "Lend Me a Tenor",
 		role: "SCENIC DESIGNER",
-		location: "",
-		date: "",
+		location: "Proscenium Theater at ELAC",
+		date: "12/1/18 - 12/10/18",
 		description: "",
 		credits: {
-			direction: "",
-			author: "",
+			direction: "Vanessa Mizzone Pellegrini",
+			author: "Ken Ludwig",
 		},
 		images: [
 			{ src: "/11_Lend_Me_a_Tenor/1.jpg", caption: "" },
