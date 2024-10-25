@@ -15,15 +15,15 @@ export default function Home() {
 									<Image
 										src={production.images[0].src}
 										alt={production.images[0].caption}
-										className="object-cover opacity-85 group-hover:opacity-100"
+										className="object-cover opacity-100 group-hover:opacity-70"
 										fill
 									/>
 								</div>
 								<div className="text-center p-2">
-									<h3 className="text-base md:text-lg text-gray-300 group-hover:text-gray-100">
+									<h3 className="text-base md:text-lg text-black group-hover:text-gray-700">
 										{production.title}
 									</h3>
-									<h4 className="text-sm text-gray-500 group-hover:text-gray-300 lowercase font-thin">
+									<h4 className="text-sm text-gray-800 group-hover:text-gray-500 lowercase font-thin">
 										by{" "}
 										<span className="italic capitalize">
 											{production.credits?.author ||

@@ -14,6 +14,12 @@ const geistMono = localFont({
 	weight: "100 900",
 });
 
+const MinionPro = localFont({
+	src: "./fonts/MinionPro.woff",
+	variable: "--font-minion-pro",
+	weight: "100 900",
+});
+
 export const metadata: Metadata = {
 	title: "Mio Okada | Portfolio",
 	description: "Personal portfolio for Mio Okada, a scenic designer.",
@@ -27,22 +33,20 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased  bg-[#181818] text-white min-h-screen`}
+				className={`${geistSans.variable} ${geistMono.variable} ${MinionPro.className} antialiased  bg-white text-black min-h-screen`}
 			>
 				<header className="flex flex-col justify-content">
 					{/* hero section  */}
 					<section className="container text-center mx-auto">
-						<h1 className="text-7xl text-white font-black uppercase pt-10">
-							Mio Okada
-						</h1>
-						<h2 className="text-2xl text-[#D7CDBB] font-light">
+						<h1 className="text-7xl font-black uppercase pt-10">Mio Okada</h1>
+						<h2 className="text-2xl text-[#9e876f] font-light uppercase">
 							Scenic Designer
 						</h2>
 					</section>
 					<NavBar />
 				</header>
 				{children}
-				<footer className="container mx-auto text-center py-6 font-thin text-gray-300">
+				<footer className="container mx-auto text-center py-6 font-thin text-gray-800">
 					<p>&copy; {new Date().getFullYear()} Mio Okada</p>
 				</footer>
 			</body>
