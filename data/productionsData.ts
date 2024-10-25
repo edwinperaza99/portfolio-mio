@@ -112,12 +112,12 @@ export const productions: Production[] = [
 		id: "5",
 		title: "The Belle's Stratagem",
 		role: "SCENIC DESIGNER",
-		location: "",
-		date: "",
+		location: "Hallberg Theater",
+		date: "3/10/23 - 3/25/23",
 		description: "",
 		credits: {
-			direction: "",
-			author: "",
+			direction: "Collette Rutherford",
+			author: "Hannah Cowley",
 		},
 		images: [
 			{ src: "/5_The_Belles_Stratagem/1.jpg", caption: "PC Jenny Graham" },
