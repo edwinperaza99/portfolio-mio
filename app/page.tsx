@@ -17,20 +17,22 @@ export default function Home() {
 										alt={production.images[0].caption}
 										className="object-cover opacity-100 group-hover:opacity-70"
 										fill
+										placeholder="blur"
+										loading="lazy"
 									/>
 								</div>
 								<div className="text-center p-2">
 									<h3 className="text-base md:text-lg text-black group-hover:text-gray-700">
 										{production.title}
 									</h3>
-									<h4 className="text-sm text-gray-800 group-hover:text-gray-500 lowercase font-thin">
+									{/* <h4 className="text-sm text-gray-800 group-hover:text-gray-500 lowercase font-thin">
 										by{" "}
 										<span className="italic capitalize">
 											{production.credits?.author ||
 												production.credits?.coordinator ||
 												"Unknown"}
 										</span>
-									</h4>
+									</h4> */}
 								</div>
 							</Link>
 						</article>

@@ -4,9 +4,10 @@ import { useState } from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import Image from "next/image";
 import "photoswipe/dist/photoswipe.css";
+import { StaticImageData } from "next/image";
 
 type ClientGalleryProps = {
-	images: { src: string; caption: string }[];
+	images: { src: StaticImageData; caption: string }[];
 };
 
 export default function ImagesGallery({ images }: ClientGalleryProps) {
@@ -28,8 +29,8 @@ export default function ImagesGallery({ images }: ClientGalleryProps) {
 			{images.map((image, index) => (
 				<div key={index} className="w-full mb-4 md:mb-6">
 					<Item
-						original={image.src}
-						thumbnail={image.src}
+						original={image.src.src}
+						thumbnail={image.src.src}
 						width={imageDimensions[index]?.width || 1200} // Default to 1200 if not loaded
 						height={imageDimensions[index]?.height || 800} // Default to 800 if not loaded
 						caption={image.caption}
@@ -51,7 +52,8 @@ export default function ImagesGallery({ images }: ClientGalleryProps) {
 									}} // Capture original dimensions
 									style={{ objectFit: "contain" }}
 									className="object-cover w-full cursor-pointer"
-									// placeholder="blur"
+									placeholder="blur"
+									loading="lazy"
 								/>
 							</div>
 						)}
