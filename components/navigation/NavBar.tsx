@@ -24,6 +24,11 @@ export default function NavBar() {
 						About
 					</Link>
 				</li>
+				<li>
+					<Link href="/contact" className="hover:text-[#9e876f]">
+						Contact
+					</Link>
+				</li>
 			</ul>
 		</nav>
 	);
