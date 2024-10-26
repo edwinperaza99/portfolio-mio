@@ -19,7 +19,7 @@ export default function Contact() {
 		const formData = new FormData(form);
 
 		// Append required fields directly to FormData
-		formData.append("access_key", "public_key_here");
+		formData.append("access_key", "a0bf3342-5e88-4c1c-b20f-264ff55fc33a");
 
 		try {
 			const response = await fetch("https://api.web3forms.com/submit", {
@@ -83,22 +83,22 @@ export default function Contact() {
 				<div className="grid grid-cols-2 gap-6">
 					<div className="space-y-1">
 						<Label htmlFor="first_name">First Name</Label>
-						<Input type="text" id="first_name" name="first_name" required />
+						<Input type="text" id="first_name" name="First Name" required />
 					</div>
 					<div className="space-y-1">
 						<Label htmlFor="last_name">Last Name</Label>
-						<Input type="text" id="last_name" name="last_name" required />
+						<Input type="text" id="last_name" name="Last Name" required />
 					</div>
 				</div>
 
 				<div className="space-y-1">
 					<Label htmlFor="email">Email</Label>
-					<Input type="email" id="email" name="email" required />
+					<Input type="email" id="email" name="Email" required />
 				</div>
 
 				<div className="space-y-1">
 					<Label htmlFor="message">Message</Label>
-					<Textarea id="message" name="message" required />
+					<Textarea id="message" name="Message" required />
 				</div>
 
 				<div className="flex justify-end">
